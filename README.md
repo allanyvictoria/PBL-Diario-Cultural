@@ -39,15 +39,6 @@ O **Diário Cultural** é uma aplicação Java que permite ao usuário registrar
 
 ---
 
-## 📁 Estrutura do Projeto
-
-- `src/`: Código fonte Java.
-- `docs/`: Diagramas (Casos de Uso, Classes) e documentação.
-- `tests/`: Testes de unidade e integração.
-- `README.md`: Você está aqui!
-
----
-
 ## 🧪 Fases de Desenvolvimento
 
 - **Fase 1**: Backend com diagramas e testes.
