@@ -58,7 +58,7 @@ O **Diário Cultural** é uma aplicação Java que permite ao usuário registrar
 
 ## 👩‍💻 Autoria
 
-Projeto desenvolvido por [Seu Nome Aqui], estudante de Engenharia de Computação da UEFS.
+Projeto desenvolvido por Allany Victória, estudante de Engenharia de Computação da UEFS.
 
 ---
 
