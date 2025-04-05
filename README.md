@@ -51,7 +51,7 @@ O **Diário Cultural** é uma aplicação Java que permite ao usuário registrar
 
 - **Java**
 - **JavaFX** (interface gráfica)
-- **JUnit** (testes)
+- **JUnit** (teste)
 - **UML** (diagramas de classe e de caso de uso)
 
 ---
