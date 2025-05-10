@@ -1,0 +1,37 @@
+package testes.views;
+
+import org.junit.*;
+import view.ListarFilme;
+import java.io.*;
+
+import static org.junit.Assert.assertTrue;
+
+public class ListarFilmeTest {
+    private final PrintStream originalOut = System.out;
+    private final InputStream originalIn = System.in;
+    private ByteArrayOutputStream outContent;
+
+    @Before
+    public void setUpStreams() {
+        outContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
+    }
+
+    @After
+    public void restoreStreams() {
+        System.setOut(originalOut);
+        System.setIn(originalIn);
+    }
+
+    @Test
+    public void testOpcaoInvalidaESair() {
+        // Simula o usuário digitando sair (3)
+        String input = "3\n";
+        System.setIn(new ByteArrayInputStream(input.getBytes()));
+
+        ListarFilme.listar();
+
+        String output = outContent.toString();
+        assertTrue(output.contains("Saindo..."));
+    }
+}

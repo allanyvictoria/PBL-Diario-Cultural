@@ -1,0 +1,266 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class Acervo {
+  - livroList: List<Livro>
+  - filmeList: List<Filme>
+  - serieList: List<Serie>
+  + listarSeriesAvaliacao(boolean): void
+  + listarFilmes(): void
+  + listarLivros(): void
+  + listarLivrosAvaliacao(boolean): void
+  + listarFilmesAvaliacao(boolean): void
+  + adicionarFilme(Filme): void
+  + adicionarSerie(Serie): void
+  + getFilmeList(): List<Filme>
+  + listarSeries(): void
+  + getSerieList(): List<Serie>
+  + adicionarLivro(Livro): void
+  + getLivroList(): List<Livro>
+}
+class BuscaFilme {
+  + ano(int): void
+  + buscarPorAtor(String): void
+  + buscarPorDiretor(String): void
+  + titulo(String): void
+  + buscaGenero(String): void
+}
+class BuscaLivro {
+  + titulo(String): void
+  + isbn(String): void
+  + autor(String): void
+  + buscaGenero(String): void
+  + ano(int): void
+}
+class BuscaSerie {
+  + buscarPorAtor(String): void
+  + ano(int): void
+  + titulo(String): void
+  + buscaGenero(String): void
+}
+class Cadastro {
+  + cadastro(String, int, String, int, String, String, String, String, boolean, LocalDate): void
+  + cadastro(String, int, String, int, String, int, List<String>, String, String, List<String>, List<String>, LocalDate): void
+  + cadastro(String, String, int, int, String, List<Temporada>, int, String, String, List<String>): void
+}
+class CadastroView {
+  ~ scanner: Scanner
+  + cadastrarFilme(): void
+  + numisbn(): String
+  + verificaData(String): LocalDate
+  + cadastrarLivro(): void
+  + cadastrarSerie(): void
+}
+class DiarioCultural {
+  + main(String[]): void
+}
+class Filme {
+  - titulo: String
+  - direcao: List<String>
+  - duracao: int
+  - elenco: List<String>
+  - roteiro: List<String>
+  - ondeAssistir: String
+  - dataAssistiu: LocalDate
+  + getDataAssistiu(): LocalDate
+  + getDuracao(): int
+  + setOndeAssistir(String): void
+  + getElenco(): List<String>
+  + getTituloOriginal(): String
+  + getTitulo(): String
+  + getRoteiro(): List<String>
+  + getOndeAssistir(): String
+  + getDirecao(): List<String>
+}
+class GenerosDisponiveis {
+  + exibirGeneros(): String?
+}
+class Listagem {
+  + listaFilmes(List<Filme>): void
+  + listaSeries(List<Serie>): void
+  + listaLivros(List<Livro>): void
+}
+class Listar {
+  + listar(): void
+}
+class ListarFilme {
+  + listar(): void
+  + filtro(): void
+}
+class ListarLivro {
+  + listar(): void
+  + filtro(): void
+}
+class ListarSerie {
+  + listar(): void
+  + filtro(): void
+}
+class Livro {
+  - genero: String
+  - possui: boolean
+  - leitura: LocalDate
+  - editora: String
+  - autor: String
+  - isbn: String
+  + setGenero(String): void
+  + setEditora(String): void
+  + getLeitura(): LocalDate
+  + getEditora(): String
+  + setPossui(boolean): void
+  + isPossui(): boolean
+  + setIsbn(String): void
+  + getAutor(): String
+  + getIsbn(): String
+}
+class Menu {
+  + menu(): void
+}
+class MenuBusca {
+  + menuBusca(): void
+}
+class MenuBuscaFilme {
+  + menuFilme(): void
+}
+class MenuBuscaLivro {
+  + menuBusca(): void
+}
+class MenuBuscaSerie {
+  + menuSerie(): void
+}
+class MenuCadastro {
+  + menucadastro(): void
+}
+class Midia {
+  - nome: String
+  - avaliacao: int
+  - review: String
+  - ano: int
+  - genero: String
+  + getAno(): int
+  + getNome(): String
+  + getAvaliacao(): int
+  + getReview(): String
+  + getGenero(): String
+}
+class Serie {
+  - tituloOriginal: String
+  - ondeAssistiu: String
+  - temps: List<Temporada>
+  - elenco: List<String>
+  - fim: int
+  + getTemporadas(): List<Temporada>
+  + setTemps(List<Temporada>): void
+  + getTituloOriginal(): String
+  + getElenco(): List<String>
+  + adicionarTemporada(Temporada): void
+  + getFim(): int
+  + getOndeAssistiu(): String
+  + setFim(int): void
+  + adicionarAtor(String): void
+  + getTemps(): List<Temporada>
+}
+class Temporada {
+  - quantidade: int
+  - avaliacao: int
+  - ano: int
+  - review: String
+  + getAvaliacao(): int
+  + getReview(): String
+  + getQuantidade(): int
+  + getAno(): int
+}
+class VerificaCadastro {
+  + verificaCadastro(String, int, String, int, String, int, List<String>, String, String, List<String>, List<String>, LocalDate): void
+  - isbnValido(String): boolean
+  + verificaCadastro(String, String, int, int, String, List<Temporada>, int, String, String, List<String>): void
+  + verificaCadastro(String, int, String, int, String, String, String, String, boolean, LocalDate): void
+}
+class VerificaInteiro {
+  + verificaInteiro(String): int
+}
+
+Acervo             "1" *-[#595959,plain]-> "filmeList\n*" Filme              
+Acervo              -[#595959,dashed]->  Listagem           
+Acervo             "1" *-[#595959,plain]-> "livroList\n*" Livro              
+Acervo             "1" *-[#595959,plain]-> "serieList\n*" Serie              
+BuscaFilme          -[#595959,dashed]->  Acervo             
+BuscaFilme          -[#595959,dashed]->  Filme              
+BuscaFilme          -[#595959,dashed]->  Listagem           
+BuscaFilme          -[#595959,dashed]->  Midia              
+BuscaLivro          -[#595959,dashed]->  Acervo             
+BuscaLivro          -[#595959,dashed]->  Listagem           
+BuscaLivro          -[#595959,dashed]->  Livro              
+BuscaLivro          -[#595959,dashed]->  Midia              
+BuscaSerie          -[#595959,dashed]->  Acervo             
+BuscaSerie          -[#595959,dashed]->  Listagem           
+BuscaSerie          -[#595959,dashed]->  Midia              
+BuscaSerie          -[#595959,dashed]->  Serie              
+Cadastro            -[#595959,dashed]->  Acervo             
+Cadastro            -[#595959,dashed]->  Filme              : "«create»"
+Cadastro            -[#595959,dashed]->  Livro              : "«create»"
+Cadastro            -[#595959,dashed]->  Serie              : "«create»"
+Cadastro            -[#595959,dashed]->  Temporada          
+CadastroView        -[#595959,dashed]->  CadastroView       
+CadastroView        -[#595959,dashed]->  GenerosDisponiveis 
+CadastroView        -[#595959,dashed]->  Temporada          : "«create»"
+CadastroView        -[#595959,dashed]->  VerificaCadastro   
+CadastroView        -[#595959,dashed]->  VerificaInteiro    
+DiarioCultural      -[#595959,dashed]->  Menu               : "«create»"
+Filme               -[#000082,plain]-^  Midia              
+GenerosDisponiveis  -[#595959,dashed]->  VerificaInteiro    
+Listagem            -[#595959,dashed]->  Filme              
+Listagem            -[#595959,dashed]->  Livro              
+Listagem            -[#595959,dashed]->  Midia              
+Listagem            -[#595959,dashed]->  Serie              
+Listagem            -[#595959,dashed]->  Temporada          
+Listar              -[#595959,dashed]->  ListarFilme        
+Listar              -[#595959,dashed]->  ListarLivro        
+Listar              -[#595959,dashed]->  ListarSerie        
+Listar              -[#595959,dashed]->  VerificaInteiro    
+ListarFilme         -[#595959,dashed]->  Acervo             
+ListarFilme         -[#595959,dashed]->  BuscaFilme         
+ListarFilme         -[#595959,dashed]->  GenerosDisponiveis 
+ListarFilme         -[#595959,dashed]->  ListarFilme        
+ListarFilme         -[#595959,dashed]->  VerificaInteiro    
+ListarLivro         -[#595959,dashed]->  Acervo             
+ListarLivro         -[#595959,dashed]->  BuscaLivro         
+ListarLivro         -[#595959,dashed]->  GenerosDisponiveis 
+ListarLivro         -[#595959,dashed]->  ListarLivro        
+ListarLivro         -[#595959,dashed]->  VerificaInteiro    
+ListarSerie         -[#595959,dashed]->  Acervo             
+ListarSerie         -[#595959,dashed]->  BuscaSerie         
+ListarSerie         -[#595959,dashed]->  GenerosDisponiveis 
+ListarSerie         -[#595959,dashed]->  ListarSerie        
+ListarSerie         -[#595959,dashed]->  VerificaInteiro    
+Livro               -[#000082,plain]-^  Midia              
+Menu                -[#595959,dashed]->  Listar             
+Menu                -[#595959,dashed]->  MenuBusca          
+Menu                -[#595959,dashed]->  MenuCadastro       
+Menu                -[#595959,dashed]->  VerificaInteiro    
+MenuBusca           -[#595959,dashed]->  MenuBuscaFilme     
+MenuBusca           -[#595959,dashed]->  MenuBuscaLivro     
+MenuBusca           -[#595959,dashed]->  MenuBuscaSerie     
+MenuBusca           -[#595959,dashed]->  VerificaInteiro    
+MenuBuscaFilme      -[#595959,dashed]->  BuscaFilme         
+MenuBuscaFilme      -[#595959,dashed]->  GenerosDisponiveis 
+MenuBuscaFilme      -[#595959,dashed]->  VerificaInteiro    
+MenuBuscaLivro      -[#595959,dashed]->  BuscaLivro         
+MenuBuscaLivro      -[#595959,dashed]->  GenerosDisponiveis 
+MenuBuscaLivro      -[#595959,dashed]->  VerificaInteiro    
+MenuBuscaSerie      -[#595959,dashed]->  BuscaSerie         
+MenuBuscaSerie      -[#595959,dashed]->  GenerosDisponiveis 
+MenuBuscaSerie      -[#595959,dashed]->  VerificaInteiro    
+MenuCadastro        -[#595959,dashed]->  CadastroView       
+MenuCadastro        -[#595959,dashed]->  VerificaInteiro    
+Serie               -[#000082,plain]-^  Midia              
+Serie              "1" *-[#595959,plain]-> "temps\n*" Temporada          
+VerificaCadastro    -[#595959,dashed]->  Cadastro           
+VerificaCadastro    -[#595959,dashed]->  CadastroView       
+VerificaCadastro    -[#595959,dashed]->  Temporada          
+VerificaCadastro    -[#595959,dashed]->  VerificaCadastro   
+VerificaCadastro    -[#595959,dashed]->  VerificaInteiro    
+VerificaInteiro     -[#595959,dashed]->  VerificaInteiro    
+@enduml
