@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/lanyv/IdeaProjects/PblJava/src</OriginalElement>
+  <nodes>
+    <node x="570.0" y="2864.5">view.MenuBuscaLivro</node>
+    <node x="1715.0" y="-140.0">model.Temporada</node>
+    <node x="777.5" y="-164.0">model.Midia</node>
+    <node x="1012.0" y="2852.5">view.ListarFilme</node>
+    <node x="16.5" y="2184.5">view.GenerosDisponiveis</node>
+    <node x="372.5" y="2712.5">view.ListarSerie</node>
+    <node x="-204.0" y="3784.5">DiarioCultural</node>
+    <node x="-51.0" y="2864.5">view.MenuBuscaSerie</node>
+    <node x="1393.5" y="2160.5">model.Cadastro</node>
+    <node x="1234.0" y="2852.5">view.ListarLivro</node>
+    <node x="1247.0" y="644.0">model.Filme</node>
+    <node x="784.0" y="2136.5">controller.BuscaFilme</node>
+    <node x="1104.5" y="1340.5">view.Listagem</node>
+    <node x="1055.5" y="2136.5">controller.BuscaLivro</node>
+    <node x="799.5" y="3084.5">view.Listar</node>
+    <node x="1642.0" y="3184.0">view.CadastroView</node>
+    <node x="1436.0" y="2688.5">controller.VerificaCadastro</node>
+    <node x="228.0" y="2864.5">view.MenuBuscaFilme</node>
+    <node x="916.5" y="656.0">model.Serie</node>
+    <node x="-180.0" y="1704.5">view.VerificaInteiro</node>
+    <node x="-182.0" y="3624.5">view.Menu</node>
+    <node x="1045.0" y="1536.0">controller.Acervo</node>
+    <node x="1520.0" y="216.0">model.Livro</node>
+    <node x="432.0" y="2148.5">controller.BuscaSerie</node>
+    <node x="119.0" y="3244.5">view.MenuBusca</node>
+    <node x="890.5" y="3464.5">view.MenuCadastro</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="view.CadastroView" target="model.Temporada" relationship="CREATE">
+      <point x="59.0" y="-92.0" />
+      <point x="1819.0" y="3156.0" />
+      <point x="1920.0" y="3156.0" />
+      <point x="1920.0" y="156.0" />
+      <point x="1856.6666666666665" y="156.0" />
+      <point x="56.666666666666686" y="116.0" />
+    </edge>
+    <edge source="view.ListarFilme" target="controller.BuscaFilme" relationship="DEPENDENCY">
+      <point x="0.0" y="-43.5" />
+      <point x="1080.0" y="2436.0" />
+      <point x="600.0" y="2436.0" />
+      <point x="600.0" y="2296.0" />
+      <point x="760.0" y="2296.0" />
+      <point x="760.0" y="2076.0" />
+      <point x="900.0" y="2076.0" />
+      <point x="0.0" y="-79.5" />
+    </edge>
+    <edge source="controller.BuscaFilme" target="controller.Acervo" relationship="DEPENDENCY">
+      <point x="0.0" y="-79.5" />
+      <point x="900.0" y="1976.0" />
+      <point x="1360.0" y="1976.0" />
+      <point x="1360.0" y="1496.0" />
+      <point x="1112.5" y="1496.0" />
+      <point x="-67.5" y="-200.0" />
+    </edge>
+    <edge source="controller.BuscaFilme" target="model.Filme" relationship="DEPENDENCY">
+      <point x="0.0" y="-79.5" />
+      <point x="900.0" y="2056.0" />
+      <point x="820.0" y="2056.0" />
+      <point x="820.0" y="1296.0" />
+      <point x="1140.0" y="1296.0" />
+      <point x="1140.0" y="1096.0" />
+      <point x="1284.6666666666667" y="1096.0" />
+      <point x="-75.33333333333334" y="212.0" />
+    </edge>
+    <edge source="view.Listagem" target="model.Midia" relationship="DEPENDENCY">
+      <point x="0.0" y="-55.5" />
+      <point x="1220.0" y="1236.0" />
+      <point x="860.0" y="1236.0" />
+      <point x="860.0" y="836.0" />
+      <point x="820.0" y="836.0" />
+      <point x="820.0" y="136.0" />
+      <point x="818.75" y="136.0" />
+      <point x="-41.25" y="140.0" />
+    </edge>
+    <edge source="view.MenuCadastro" target="view.VerificaInteiro" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="980.0" y="3416.0" />
+      <point x="-240.0" y="3416.0" />
+      <point x="-240.0" y="2076.0" />
+      <point x="-40.0" y="2076.0" />
+      <point x="-40.0" y="1796.0" />
+      <point x="-30.0" y="1796.0" />
+      <point x="50.0" y="31.5" />
+    </edge>
+    <edge source="view.VerificaInteiro" target="view.VerificaInteiro" relationship="DEPENDENCY">
+      <point x="-100.0" y="-0.0" />
+      <point x="-220.0" y="1736.0" />
+      <point x="-220.0" y="1816.0" />
+      <point x="-130.0" y="1816.0" />
+      <point x="-50.0" y="31.5" />
+    </edge>
+    <edge source="model.Cadastro" target="model.Temporada" relationship="DEPENDENCY">
+      <point x="-103.25" y="-55.5" />
+      <point x="1496.75" y="2136.0" />
+      <point x="1500.0" y="2136.0" />
+      <point x="1500.0" y="2036.0" />
+      <point x="1800.0" y="2036.0" />
+      <point x="0.0" y="116.0" />
+    </edge>
+    <edge source="view.ListarFilme" target="view.VerificaInteiro" relationship="DEPENDENCY">
+      <point x="0.0" y="-43.5" />
+      <point x="1080.0" y="2376.0" />
+      <point x="320.0" y="2376.0" />
+      <point x="320.0" y="2076.0" />
+      <point x="-40.0" y="2076.0" />
+      <point x="-40.0" y="1796.0" />
+      <point x="-30.0" y="1796.0" />
+      <point x="50.0" y="31.5" />
+    </edge>
+    <edge source="controller.VerificaCadastro" target="model.Cadastro" relationship="DEPENDENCY">
+      <point x="102.0" y="67.5" />
+      <point x="1742.0" y="3016.0" />
+      <point x="1860.0" y="3016.0" />
+      <point x="1860.0" y="2336.0" />
+      <point x="1840.0" y="2336.0" />
+      <point x="1840.0" y="2116.0" />
+      <point x="1496.75" y="2116.0" />
+      <point x="-103.25" y="-55.5" />
+    </edge>
+    <edge source="view.MenuBuscaLivro" target="controller.BuscaLivro" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="660.0" y="2636.0" />
+      <point x="280.0" y="2636.0" />
+      <point x="280.0" y="2576.0" />
+      <point x="1240.0" y="2576.0" />
+      <point x="1240.0" y="2316.0" />
+      <point x="1280.0" y="2316.0" />
+      <point x="1280.0" y="2116.0" />
+      <point x="1160.0" y="2116.0" />
+      <point x="0.0" y="-79.5" />
+    </edge>
+    <edge source="view.MenuBuscaSerie" target="view.GenerosDisponiveis" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="40.0" y="2436.0" />
+      <point x="240.0" y="2436.0" />
+      <point x="240.0" y="2156.0" />
+      <point x="120.0" y="2156.0" />
+      <point x="0.0" y="-31.5" />
+    </edge>
+    <edge source="view.CadastroView" target="controller.VerificaCadastro" relationship="DEPENDENCY">
+      <point x="-59.0" y="-92.0" />
+      <point x="1701.0" y="3156.0" />
+      <point x="1700.0" y="3156.0" />
+      <point x="1700.0" y="2996.0" />
+      <point x="1742.0" y="2996.0" />
+      <point x="102.0" y="67.5" />
+    </edge>
+    <edge source="controller.VerificaCadastro" target="view.CadastroView" relationship="DEPENDENCY">
+      <point x="102.0" y="67.5" />
+      <point x="1742.0" y="3036.0" />
+      <point x="1701.0" y="3036.0" />
+      <point x="-59.0" y="-92.0" />
+    </edge>
+    <edge source="view.MenuBusca" target="view.VerificaInteiro" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="200.0" y="3016.0" />
+      <point x="-120.0" y="3016.0" />
+      <point x="-120.0" y="2076.0" />
+      <point x="-40.0" y="2076.0" />
+      <point x="-40.0" y="1796.0" />
+      <point x="-30.0" y="1796.0" />
+      <point x="50.0" y="31.5" />
+    </edge>
+    <edge source="view.MenuBuscaLivro" target="view.GenerosDisponiveis" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="660.0" y="2636.0" />
+      <point x="280.0" y="2636.0" />
+      <point x="280.0" y="2496.0" />
+      <point x="240.0" y="2496.0" />
+      <point x="240.0" y="2156.0" />
+      <point x="120.0" y="2156.0" />
+      <point x="0.0" y="-31.5" />
+    </edge>
+    <edge source="DiarioCultural" target="view.Menu" relationship="CREATE">
+      <point x="0.0" y="-31.5" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="controller.BuscaSerie" target="model.Midia" relationship="DEPENDENCY">
+      <point x="0.0" y="-67.5" />
+      <point x="540.0" y="2096.0" />
+      <point x="760.0" y="2096.0" />
+      <point x="760.0" y="1756.0" />
+      <point x="700.0" y="1756.0" />
+      <point x="700.0" y="836.0" />
+      <point x="820.0" y="836.0" />
+      <point x="820.0" y="136.0" />
+      <point x="818.75" y="136.0" />
+      <point x="-41.25" y="140.0" />
+    </edge>
+    <edge source="controller.BuscaLivro" target="model.Midia" relationship="DEPENDENCY">
+      <point x="0.0" y="-79.5" />
+      <point x="1160.0" y="2096.0" />
+      <point x="940.0" y="2096.0" />
+      <point x="940.0" y="2016.0" />
+      <point x="1020.0" y="2016.0" />
+      <point x="1020.0" y="1496.0" />
+      <point x="860.0" y="1496.0" />
+      <point x="860.0" y="1276.0" />
+      <point x="820.0" y="1276.0" />
+      <point x="820.0" y="136.0" />
+      <point x="818.75" y="136.0" />
+      <point x="-41.25" y="140.0" />
+    </edge>
+    <edge source="controller.VerificaCadastro" target="model.Temporada" relationship="DEPENDENCY">
+      <point x="102.0" y="67.5" />
+      <point x="1742.0" y="3016.0" />
+      <point x="1860.0" y="3016.0" />
+      <point x="1860.0" y="2336.0" />
+      <point x="1880.0" y="2336.0" />
+      <point x="1880.0" y="176.0" />
+      <point x="1800.0" y="176.0" />
+      <point x="0.0" y="116.0" />
+    </edge>
+    <edge source="view.CadastroView" target="view.VerificaInteiro" relationship="DEPENDENCY">
+      <point x="-59.0" y="-92.0" />
+      <point x="1701.0" y="3156.0" />
+      <point x="1700.0" y="3156.0" />
+      <point x="1700.0" y="2996.0" />
+      <point x="820.0" y="2996.0" />
+      <point x="820.0" y="2616.0" />
+      <point x="360.0" y="2616.0" />
+      <point x="360.0" y="2076.0" />
+      <point x="-40.0" y="2076.0" />
+      <point x="-40.0" y="1796.0" />
+      <point x="-30.0" y="1796.0" />
+      <point x="50.0" y="31.5" />
+    </edge>
+    <edge source="controller.VerificaCadastro" target="controller.VerificaCadastro" relationship="DEPENDENCY">
+      <point x="-204.0" y="-0.0" />
+      <point x="1400.0" y="2756.0" />
+      <point x="1400.0" y="2856.0" />
+      <point x="1538.0" y="2856.0" />
+      <point x="-102.0" y="67.5" />
+    </edge>
+    <edge source="view.MenuBuscaFilme" target="view.GenerosDisponiveis" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="320.0" y="2616.0" />
+      <point x="200.0" y="2616.0" />
+      <point x="200.0" y="2516.0" />
+      <point x="240.0" y="2516.0" />
+      <point x="240.0" y="2156.0" />
+      <point x="120.0" y="2156.0" />
+      <point x="0.0" y="-31.5" />
+    </edge>
+    <edge source="view.ListarLivro" target="view.VerificaInteiro" relationship="DEPENDENCY">
+      <point x="0.0" y="-43.5" />
+      <point x="1300.0" y="2356.0" />
+      <point x="680.0" y="2356.0" />
+      <point x="680.0" y="2076.0" />
+      <point x="-40.0" y="2076.0" />
+      <point x="-40.0" y="1796.0" />
+      <point x="-30.0" y="1796.0" />
+      <point x="50.0" y="31.5" />
+    </edge>
+    <edge source="model.Cadastro" target="model.Livro" relationship="CREATE">
+      <point x="103.25" y="-55.5" />
+      <point x="1703.25" y="2136.0" />
+      <point x="1700.0" y="2136.0" />
+      <point x="1700.0" y="1376.0" />
+      <point x="1686.6666666666667" y="1376.0" />
+      <point x="66.66666666666666" y="200.0" />
+    </edge>
+    <edge source="view.ListarFilme" target="view.ListarFilme" relationship="DEPENDENCY">
+      <point x="-68.0" y="-0.0" />
+      <point x="980.0" y="2896.0" />
+      <point x="980.0" y="2976.0" />
+      <point x="1080.0" y="2976.0" />
+      <point x="0.0" y="43.5" />
+    </edge>
+    <edge source="view.ListarSerie" target="controller.Acervo" relationship="DEPENDENCY">
+      <point x="0.0" y="-43.5" />
+      <point x="440.0" y="2656.0" />
+      <point x="240.0" y="2656.0" />
+      <point x="240.0" y="2316.0" />
+      <point x="1040.0" y="2316.0" />
+      <point x="1040.0" y="2076.0" />
+      <point x="1360.0" y="2076.0" />
+      <point x="1360.0" y="1496.0" />
+      <point x="1112.5" y="1496.0" />
+      <point x="-67.5" y="-200.0" />
+    </edge>
+    <edge source="view.Listar" target="view.VerificaInteiro" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="860.0" y="3036.0" />
+      <point x="-200.0" y="3036.0" />
+      <point x="-200.0" y="2076.0" />
+      <point x="-40.0" y="2076.0" />
+      <point x="-40.0" y="1796.0" />
+      <point x="-30.0" y="1796.0" />
+      <point x="50.0" y="31.5" />
+    </edge>
+    <edge source="view.Menu" target="view.MenuBusca" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="-120.0" y="3216.0" />
+      <point x="200.0" y="3216.0" />
+      <point x="0.0" y="-31.5" />
+    </edge>
+    <edge source="view.ListarLivro" target="view.GenerosDisponiveis" relationship="DEPENDENCY">
+      <point x="0.0" y="-43.5" />
+      <point x="1300.0" y="2416.0" />
+      <point x="240.0" y="2416.0" />
+      <point x="240.0" y="2156.0" />
+      <point x="120.0" y="2156.0" />
+      <point x="0.0" y="-31.5" />
+    </edge>
+    <edge source="controller.BuscaFilme" target="view.Listagem" relationship="DEPENDENCY">
+      <point x="0.0" y="-79.5" />
+      <point x="900.0" y="1416.0" />
+      <point x="940.0" y="1416.0" />
+      <point x="940.0" y="1316.0" />
+      <point x="1220.0" y="1316.0" />
+      <point x="0.0" y="-55.5" />
+    </edge>
+    <edge source="view.MenuBusca" target="view.MenuBuscaSerie" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="200.0" y="3016.0" />
+      <point x="-80.0" y="3016.0" />
+      <point x="-80.0" y="2836.0" />
+      <point x="40.0" y="2836.0" />
+      <point x="0.0" y="-31.5" />
+    </edge>
+    <edge source="controller.Acervo" target="model.Filme" relationship="TO_MANY">
+      <point x="67.5" y="-200.0" />
+      <point x="1247.5" y="1516.0" />
+      <point x="1240.0" y="1516.0" />
+      <point x="1240.0" y="1476.0" />
+      <point x="1360.0" y="1476.0" />
+      <point x="0.0" y="212.0" />
+    </edge>
+    <edge source="controller.BuscaLivro" target="model.Livro" relationship="DEPENDENCY">
+      <point x="0.0" y="-79.5" />
+      <point x="1160.0" y="2096.0" />
+      <point x="940.0" y="2096.0" />
+      <point x="940.0" y="2016.0" />
+      <point x="1580.0" y="2016.0" />
+      <point x="1580.0" y="1136.0" />
+      <point x="1540.0" y="1136.0" />
+      <point x="1540.0" y="636.0" />
+      <point x="1553.3333333333333" y="636.0" />
+      <point x="-66.66666666666666" y="200.0" />
+    </edge>
+    <edge source="view.CadastroView" target="view.GenerosDisponiveis" relationship="DEPENDENCY">
+      <point x="-59.0" y="-92.0" />
+      <point x="1701.0" y="3156.0" />
+      <point x="1700.0" y="3156.0" />
+      <point x="1700.0" y="2996.0" />
+      <point x="160.0" y="2996.0" />
+      <point x="160.0" y="2476.0" />
+      <point x="240.0" y="2476.0" />
+      <point x="240.0" y="2156.0" />
+      <point x="120.0" y="2156.0" />
+      <point x="0.0" y="-31.5" />
+    </edge>
+    <edge source="view.Menu" target="view.VerificaInteiro" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="-120.0" y="3556.0" />
+      <point x="-160.0" y="3556.0" />
+      <point x="-160.0" y="2076.0" />
+      <point x="-40.0" y="2076.0" />
+      <point x="-40.0" y="1796.0" />
+      <point x="-30.0" y="1796.0" />
+      <point x="50.0" y="31.5" />
+    </edge>
+    <edge source="view.MenuBuscaFilme" target="controller.BuscaFilme" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="320.0" y="2616.0" />
+      <point x="200.0" y="2616.0" />
+      <point x="200.0" y="2536.0" />
+      <point x="600.0" y="2536.0" />
+      <point x="600.0" y="2296.0" />
+      <point x="760.0" y="2296.0" />
+      <point x="760.0" y="2076.0" />
+      <point x="900.0" y="2076.0" />
+      <point x="0.0" y="-79.5" />
+    </edge>
+    <edge source="controller.BuscaLivro" target="controller.Acervo" relationship="DEPENDENCY">
+      <point x="0.0" y="-79.5" />
+      <point x="1160.0" y="2096.0" />
+      <point x="940.0" y="2096.0" />
+      <point x="940.0" y="1996.0" />
+      <point x="1360.0" y="1996.0" />
+      <point x="1360.0" y="1496.0" />
+      <point x="1112.5" y="1496.0" />
+      <point x="-67.5" y="-200.0" />
+    </edge>
+    <edge source="controller.BuscaLivro" target="view.Listagem" relationship="DEPENDENCY">
+      <point x="0.0" y="-79.5" />
+      <point x="1160.0" y="2096.0" />
+      <point x="940.0" y="2096.0" />
+      <point x="940.0" y="1516.0" />
+      <point x="900.0" y="1516.0" />
+      <point x="900.0" y="1416.0" />
+      <point x="940.0" y="1416.0" />
+      <point x="940.0" y="1316.0" />
+      <point x="1220.0" y="1316.0" />
+      <point x="0.0" y="-55.5" />
+    </edge>
+    <edge source="view.ListarLivro" target="controller.BuscaLivro" relationship="DEPENDENCY">
+      <point x="0.0" y="-43.5" />
+      <point x="1300.0" y="2396.0" />
+      <point x="1240.0" y="2396.0" />
+      <point x="1240.0" y="2316.0" />
+      <point x="1280.0" y="2316.0" />
+      <point x="1280.0" y="2116.0" />
+      <point x="1160.0" y="2116.0" />
+      <point x="0.0" y="-79.5" />
+    </edge>
+    <edge source="view.CadastroView" target="view.CadastroView" relationship="DEPENDENCY">
+      <point x="-118.0" y="-0.0" />
+      <point x="1600.0" y="3276.0" />
+      <point x="1600.0" y="3416.0" />
+      <point x="1760.0" y="3416.0" />
+      <point x="0.0" y="92.0" />
+    </edge>
+    <edge source="model.Cadastro" target="model.Filme" relationship="CREATE">
+      <point x="103.25" y="-55.5" />
+      <point x="1703.25" y="2136.0" />
+      <point x="1700.0" y="2136.0" />
+      <point x="1700.0" y="2096.0" />
+      <point x="1660.0" y="2096.0" />
+      <point x="1660.0" y="1176.0" />
+      <point x="1435.3333333333333" y="1176.0" />
+      <point x="75.33333333333334" y="212.0" />
+    </edge>
+    <edge source="view.Listagem" target="model.Temporada" relationship="DEPENDENCY">
+      <point x="0.0" y="-55.5" />
+      <point x="1220.0" y="176.0" />
+      <point x="1800.0" y="176.0" />
+      <point x="0.0" y="116.0" />
+    </edge>
+    <edge source="view.Listar" target="view.ListarFilme" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="860.0" y="2816.0" />
+      <point x="1080.0" y="2816.0" />
+      <point x="0.0" y="-43.5" />
+    </edge>
+    <edge source="view.ListarSerie" target="controller.BuscaSerie" relationship="DEPENDENCY">
+      <point x="0.0" y="-43.5" />
+      <point x="440.0" y="2656.0" />
+      <point x="240.0" y="2656.0" />
+      <point x="240.0" y="2556.0" />
+      <point x="160.0" y="2556.0" />
+      <point x="160.0" y="2276.0" />
+      <point x="400.0" y="2276.0" />
+      <point x="400.0" y="2116.0" />
+      <point x="540.0" y="2116.0" />
+      <point x="0.0" y="-67.5" />
+    </edge>
+    <edge source="view.ListarSerie" target="view.ListarSerie" relationship="DEPENDENCY">
+      <point x="-67.5" y="-0.0" />
+      <point x="340.0" y="2756.0" />
+      <point x="340.0" y="2836.0" />
+      <point x="440.0" y="2836.0" />
+      <point x="0.0" y="43.5" />
+    </edge>
+    <edge source="view.MenuBuscaSerie" target="view.VerificaInteiro" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="40.0" y="2816.0" />
+      <point x="-80.0" y="2816.0" />
+      <point x="-80.0" y="2076.0" />
+      <point x="-40.0" y="2076.0" />
+      <point x="-40.0" y="1796.0" />
+      <point x="-30.0" y="1796.0" />
+      <point x="50.0" y="31.5" />
+    </edge>
+    <edge source="controller.Acervo" target="model.Livro" relationship="TO_MANY">
+      <point x="67.5" y="-200.0" />
+      <point x="1247.5" y="1516.0" />
+      <point x="1240.0" y="1516.0" />
+      <point x="1240.0" y="1476.0" />
+      <point x="1540.0" y="1476.0" />
+      <point x="1540.0" y="1156.0" />
+      <point x="1620.0" y="1156.0" />
+      <point x="0.0" y="200.0" />
+    </edge>
+    <edge source="view.ListarLivro" target="view.ListarLivro" relationship="DEPENDENCY">
+      <point x="-66.0" y="-0.0" />
+      <point x="1200.0" y="2896.0" />
+      <point x="1200.0" y="2976.0" />
+      <point x="1300.0" y="2976.0" />
+      <point x="0.0" y="43.5" />
+    </edge>
+    <edge source="controller.Acervo" target="model.Serie" relationship="TO_MANY">
+      <point x="67.5" y="-200.0" />
+      <point x="1247.5" y="1516.0" />
+      <point x="1240.0" y="1516.0" />
+      <point x="1240.0" y="1476.0" />
+      <point x="900.0" y="1476.0" />
+      <point x="900.0" y="636.0" />
+      <point x="988.25" y="636.0" />
+      <point x="-71.75" y="-200.0" />
+    </edge>
+    <edge source="view.Listagem" target="model.Serie" relationship="DEPENDENCY">
+      <point x="0.0" y="-55.5" />
+      <point x="1220.0" y="1216.0" />
+      <point x="980.0" y="1216.0" />
+      <point x="980.0" y="1076.0" />
+      <point x="988.25" y="1076.0" />
+      <point x="-71.75" y="200.0" />
+    </edge>
+    <edge source="controller.BuscaSerie" target="model.Serie" relationship="DEPENDENCY">
+      <point x="0.0" y="-67.5" />
+      <point x="540.0" y="2096.0" />
+      <point x="760.0" y="2096.0" />
+      <point x="760.0" y="1756.0" />
+      <point x="740.0" y="1756.0" />
+      <point x="740.0" y="1256.0" />
+      <point x="980.0" y="1256.0" />
+      <point x="980.0" y="1076.0" />
+      <point x="988.25" y="1076.0" />
+      <point x="-71.75" y="200.0" />
+    </edge>
+    <edge source="controller.VerificaCadastro" target="view.VerificaInteiro" relationship="DEPENDENCY">
+      <point x="102.0" y="67.5" />
+      <point x="1742.0" y="3016.0" />
+      <point x="1860.0" y="3016.0" />
+      <point x="1860.0" y="2336.0" />
+      <point x="720.0" y="2336.0" />
+      <point x="720.0" y="2076.0" />
+      <point x="-40.0" y="2076.0" />
+      <point x="-40.0" y="1796.0" />
+      <point x="-30.0" y="1796.0" />
+      <point x="50.0" y="31.5" />
+    </edge>
+    <edge source="view.Listagem" target="model.Livro" relationship="DEPENDENCY">
+      <point x="0.0" y="-55.5" />
+      <point x="1220.0" y="1116.0" />
+      <point x="1540.0" y="1116.0" />
+      <point x="1540.0" y="636.0" />
+      <point x="1553.3333333333333" y="636.0" />
+      <point x="-66.66666666666666" y="200.0" />
+    </edge>
+    <edge source="view.ListarFilme" target="view.GenerosDisponiveis" relationship="DEPENDENCY">
+      <point x="0.0" y="-43.5" />
+      <point x="1080.0" y="2456.0" />
+      <point x="240.0" y="2456.0" />
+      <point x="240.0" y="2156.0" />
+      <point x="120.0" y="2156.0" />
+      <point x="0.0" y="-31.5" />
+    </edge>
+    <edge source="view.MenuBusca" target="view.MenuBuscaFilme" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="200.0" y="2596.0" />
+      <point x="320.0" y="2596.0" />
+      <point x="0.0" y="-31.5" />
+    </edge>
+    <edge source="view.MenuBuscaLivro" target="view.VerificaInteiro" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="660.0" y="2636.0" />
+      <point x="280.0" y="2636.0" />
+      <point x="280.0" y="2076.0" />
+      <point x="-40.0" y="2076.0" />
+      <point x="-40.0" y="1796.0" />
+      <point x="-30.0" y="1796.0" />
+      <point x="50.0" y="31.5" />
+    </edge>
+    <edge source="model.Livro" target="model.Midia" relationship="GENERALIZATION">
+      <point x="0.0" y="-200.0" />
+      <point x="1620.0" y="196.0" />
+      <point x="1140.0" y="196.0" />
+      <point x="1140.0" y="136.0" />
+      <point x="901.25" y="136.0" />
+      <point x="41.25" y="140.0" />
+    </edge>
+    <edge source="model.Cadastro" target="controller.Acervo" relationship="DEPENDENCY">
+      <point x="-103.25" y="-55.5" />
+      <point x="1496.75" y="2136.0" />
+      <point x="1500.0" y="2136.0" />
+      <point x="1500.0" y="2056.0" />
+      <point x="1360.0" y="2056.0" />
+      <point x="1360.0" y="1496.0" />
+      <point x="1112.5" y="1496.0" />
+      <point x="-67.5" y="-200.0" />
+    </edge>
+    <edge source="view.Listar" target="view.ListarLivro" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="860.0" y="3036.0" />
+      <point x="1180.0" y="3036.0" />
+      <point x="1180.0" y="2816.0" />
+      <point x="1300.0" y="2816.0" />
+      <point x="0.0" y="-43.5" />
+    </edge>
+    <edge source="model.Serie" target="model.Midia" relationship="GENERALIZATION">
+      <point x="71.75" y="-200.0" />
+      <point x="1131.75" y="196.0" />
+      <point x="1140.0" y="196.0" />
+      <point x="1140.0" y="136.0" />
+      <point x="901.25" y="136.0" />
+      <point x="41.25" y="140.0" />
+    </edge>
+    <edge source="view.Listar" target="view.ListarSerie" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="860.0" y="3036.0" />
+      <point x="540.0" y="3036.0" />
+      <point x="540.0" y="2676.0" />
+      <point x="440.0" y="2676.0" />
+      <point x="0.0" y="-43.5" />
+    </edge>
+    <edge source="view.MenuBuscaFilme" target="view.VerificaInteiro" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="320.0" y="2616.0" />
+      <point x="200.0" y="2616.0" />
+      <point x="200.0" y="2576.0" />
+      <point x="-40.0" y="2576.0" />
+      <point x="-40.0" y="1796.0" />
+      <point x="-30.0" y="1796.0" />
+      <point x="50.0" y="31.5" />
+    </edge>
+    <edge source="view.Menu" target="view.Listar" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="-120.0" y="3556.0" />
+      <point x="1100.0" y="3556.0" />
+      <point x="1100.0" y="3396.0" />
+      <point x="940.0" y="3396.0" />
+      <point x="940.0" y="3056.0" />
+      <point x="860.0" y="3056.0" />
+      <point x="0.0" y="-31.5" />
+    </edge>
+    <edge source="view.ListarSerie" target="view.VerificaInteiro" relationship="DEPENDENCY">
+      <point x="0.0" y="-43.5" />
+      <point x="440.0" y="2656.0" />
+      <point x="240.0" y="2656.0" />
+      <point x="240.0" y="2316.0" />
+      <point x="0.0" y="2316.0" />
+      <point x="0.0" y="2076.0" />
+      <point x="-40.0" y="2076.0" />
+      <point x="-40.0" y="1796.0" />
+      <point x="-30.0" y="1796.0" />
+      <point x="50.0" y="31.5" />
+    </edge>
+    <edge source="controller.BuscaSerie" target="controller.Acervo" relationship="DEPENDENCY">
+      <point x="0.0" y="-67.5" />
+      <point x="540.0" y="2096.0" />
+      <point x="760.0" y="2096.0" />
+      <point x="760.0" y="1956.0" />
+      <point x="1360.0" y="1956.0" />
+      <point x="1360.0" y="1496.0" />
+      <point x="1112.5" y="1496.0" />
+      <point x="-67.5" y="-200.0" />
+    </edge>
+    <edge source="controller.Acervo" target="view.Listagem" relationship="DEPENDENCY">
+      <point x="-67.5" y="-200.0" />
+      <point x="1112.5" y="1516.0" />
+      <point x="900.0" y="1516.0" />
+      <point x="900.0" y="1416.0" />
+      <point x="940.0" y="1416.0" />
+      <point x="940.0" y="1316.0" />
+      <point x="1220.0" y="1316.0" />
+      <point x="0.0" y="-55.5" />
+    </edge>
+    <edge source="view.MenuBuscaSerie" target="controller.BuscaSerie" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="40.0" y="2336.0" />
+      <point x="160.0" y="2336.0" />
+      <point x="160.0" y="2276.0" />
+      <point x="400.0" y="2276.0" />
+      <point x="400.0" y="2116.0" />
+      <point x="540.0" y="2116.0" />
+      <point x="0.0" y="-67.5" />
+    </edge>
+    <edge source="controller.BuscaSerie" target="view.Listagem" relationship="DEPENDENCY">
+      <point x="0.0" y="-67.5" />
+      <point x="540.0" y="2096.0" />
+      <point x="760.0" y="2096.0" />
+      <point x="760.0" y="1756.0" />
+      <point x="860.0" y="1756.0" />
+      <point x="860.0" y="1516.0" />
+      <point x="900.0" y="1516.0" />
+      <point x="900.0" y="1416.0" />
+      <point x="940.0" y="1416.0" />
+      <point x="940.0" y="1316.0" />
+      <point x="1220.0" y="1316.0" />
+      <point x="0.0" y="-55.5" />
+    </edge>
+    <edge source="controller.BuscaFilme" target="model.Midia" relationship="DEPENDENCY">
+      <point x="0.0" y="-79.5" />
+      <point x="900.0" y="2056.0" />
+      <point x="780.0" y="2056.0" />
+      <point x="780.0" y="836.0" />
+      <point x="820.0" y="836.0" />
+      <point x="820.0" y="136.0" />
+      <point x="818.75" y="136.0" />
+      <point x="-41.25" y="140.0" />
+    </edge>
+    <edge source="view.GenerosDisponiveis" target="view.VerificaInteiro" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="120.0" y="2076.0" />
+      <point x="-40.0" y="2076.0" />
+      <point x="-40.0" y="1796.0" />
+      <point x="-30.0" y="1796.0" />
+      <point x="50.0" y="31.5" />
+    </edge>
+    <edge source="model.Serie" target="model.Temporada" relationship="TO_MANY">
+      <point x="-71.75" y="-200.0" />
+      <point x="988.25" y="156.0" />
+      <point x="1743.3333333333333" y="156.0" />
+      <point x="-56.66666666666667" y="116.0" />
+    </edge>
+    <edge source="view.ListarFilme" target="controller.Acervo" relationship="DEPENDENCY">
+      <point x="0.0" y="-43.5" />
+      <point x="1080.0" y="2376.0" />
+      <point x="1320.0" y="2376.0" />
+      <point x="1320.0" y="2076.0" />
+      <point x="1360.0" y="2076.0" />
+      <point x="1360.0" y="1496.0" />
+      <point x="1112.5" y="1496.0" />
+      <point x="-67.5" y="-200.0" />
+    </edge>
+    <edge source="view.MenuBusca" target="view.MenuBuscaLivro" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="200.0" y="3016.0" />
+      <point x="780.0" y="3016.0" />
+      <point x="780.0" y="2836.0" />
+      <point x="660.0" y="2836.0" />
+      <point x="0.0" y="-31.5" />
+    </edge>
+    <edge source="model.Filme" target="model.Midia" relationship="GENERALIZATION">
+      <point x="0.0" y="-212.0" />
+      <point x="1360.0" y="196.0" />
+      <point x="1140.0" y="196.0" />
+      <point x="1140.0" y="136.0" />
+      <point x="901.25" y="136.0" />
+      <point x="41.25" y="140.0" />
+    </edge>
+    <edge source="view.Listagem" target="model.Filme" relationship="DEPENDENCY">
+      <point x="0.0" y="-55.5" />
+      <point x="1220.0" y="1136.0" />
+      <point x="1140.0" y="1136.0" />
+      <point x="1140.0" y="1096.0" />
+      <point x="1284.6666666666667" y="1096.0" />
+      <point x="-75.33333333333334" y="212.0" />
+    </edge>
+    <edge source="view.ListarLivro" target="controller.Acervo" relationship="DEPENDENCY">
+      <point x="0.0" y="-43.5" />
+      <point x="1300.0" y="2356.0" />
+      <point x="1360.0" y="2356.0" />
+      <point x="1360.0" y="1496.0" />
+      <point x="1112.5" y="1496.0" />
+      <point x="-67.5" y="-200.0" />
+    </edge>
+    <edge source="view.Menu" target="view.MenuCadastro" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="-120.0" y="3556.0" />
+      <point x="-80.0" y="3556.0" />
+      <point x="-80.0" y="3436.0" />
+      <point x="980.0" y="3436.0" />
+      <point x="0.0" y="-31.5" />
+    </edge>
+    <edge source="model.Cadastro" target="model.Serie" relationship="CREATE">
+      <point x="103.25" y="-55.5" />
+      <point x="1703.25" y="2136.0" />
+      <point x="1700.0" y="2136.0" />
+      <point x="1700.0" y="2096.0" />
+      <point x="1620.0" y="2096.0" />
+      <point x="1620.0" y="1196.0" />
+      <point x="1131.75" y="1196.0" />
+      <point x="71.75" y="200.0" />
+    </edge>
+    <edge source="view.ListarSerie" target="view.GenerosDisponiveis" relationship="DEPENDENCY">
+      <point x="0.0" y="-43.5" />
+      <point x="440.0" y="2656.0" />
+      <point x="240.0" y="2656.0" />
+      <point x="240.0" y="2156.0" />
+      <point x="120.0" y="2156.0" />
+      <point x="0.0" y="-31.5" />
+    </edge>
+    <edge source="view.MenuCadastro" target="view.CadastroView" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="980.0" y="3136.0" />
+      <point x="1701.0" y="3136.0" />
+      <point x="-59.0" y="-92.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.7327667063912432" showDependencies="true" x="1336.4022971934119" y="480.99487999999985" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
