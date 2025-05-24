@@ -104,7 +104,7 @@ public class CadastroView {
 
         // Se o livro foi lido, solicita a avaliação, review e data de leitura
         if (lido == 1) {
-            int avaliacao = VerificaInteiro.verificaInteiro("Avalie entre 0 e 5: ");
+            int avaliacao = VerificaInteiro.verificaInteiro("Avalie entre 1 e 5: ");
             System.out.println("Review: ");
             String review = scanner.nextLine();
             LocalDate dataLeitura = verificaData("Data da leitura");
@@ -188,7 +188,7 @@ public class CadastroView {
 
         // Se o filme foi visto, solicita a avaliação, review e data de visualização
         if (visto == 1) {
-            int avaliacao = VerificaInteiro.verificaInteiro("Avalie entre 0 e 5: ");
+            int avaliacao = VerificaInteiro.verificaInteiro("Avalie entre 1 e 5: ");
             System.out.println("Review: ");
             String review = scanner.nextLine();
             LocalDate dataView = verificaData("Data em que assistiu");
@@ -259,9 +259,9 @@ public class CadastroView {
             System.out.println("======Cadastro temporada " + (i + 1) + "====== ");
             int anoTemp = VerificaInteiro.verificaInteiro("Ano da temporada: ");
             int quantidade = VerificaInteiro.verificaInteiro("Quantidade de episódios: ");
-            int avaliacao = VerificaInteiro.verificaInteiro("Avalie entre 0 e 5: ");
+            int avaliacao = VerificaInteiro.verificaInteiro("Avalie entre 1 e 5: ");
             while (avaliacao < 1 || avaliacao > 5) {
-                avaliacao = VerificaInteiro.verificaInteiro("Avalie entre 0 e 5: ");
+                avaliacao = VerificaInteiro.verificaInteiro("Avalie entre 1 e 5: ");
             }
             System.out.println("Review da temporada: ");
             String reviewTemp = scanner.nextLine();

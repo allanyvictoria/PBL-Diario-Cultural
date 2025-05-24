@@ -30,7 +30,7 @@ public class VerificaCadastro {
                                         boolean possui, LocalDate leitura) {
         if (leitura != null) {
             while (avaliacao < 1 || avaliacao > 5) {
-                avaliacao = VerificaInteiro.verificaInteiro("Avalie entre 0 e 5: ");
+                avaliacao = VerificaInteiro.verificaInteiro("Avalie entre 1 e 5: ");
             }
         }
 
@@ -64,7 +64,7 @@ public class VerificaCadastro {
                                         List <String> direcao, LocalDate dataAssistiu) {
         if (dataAssistiu != null) {
             while (avaliacao < 1 || avaliacao > 5) {
-                avaliacao = VerificaInteiro.verificaInteiro("Avalie entre 0 e 5: ");
+                avaliacao = VerificaInteiro.verificaInteiro("Avalie entre 1 e 5: ");
             }
         }
         Cadastro.cadastro(nome, avaliacao, genero, ano, review, duracao,

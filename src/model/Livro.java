@@ -7,8 +7,7 @@ import java.time.LocalDate;
  */
 public class Livro extends Midia {
     private final String autor;      // Autor do livro
-    private String editora;          // Editora do livro
-    private String genero;           // Gênero literário
+    private String editora;            // Gênero literário
     private String isbn;             // Código ISBN do livro
     private boolean possui;          // Indica se o usuário possui o livro
     private LocalDate leitura;       // Data de leitura (se o livro foi lido)
@@ -30,7 +29,6 @@ public class Livro extends Midia {
     public Livro(String nome, int avaliacao, String genero, int ano, String review, String autor,
                  String editora, String isbn, boolean possui, LocalDate leitura) {
         super(nome, avaliacao, genero, ano, review);
-        this.genero = genero;
         this.autor = autor;
         this.editora = editora;
         this.isbn = isbn;
