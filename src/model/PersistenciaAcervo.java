@@ -97,7 +97,7 @@ public class PersistenciaAcervo {
             return lista;
 
         } catch (JsonSyntaxException e) {
-            System.err.println("❌ JSON malformatado em " + arquivo + ": " + e.getMessage());
+            System.err.println("❌ JSON mal formatado em " + arquivo + ": " + e.getMessage());
             return new ArrayList<>();
         } catch (IOException e) {
             System.err.println("❌ Erro de leitura em " + arquivo + ": " + e.getMessage());
