@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            fitToWidth="true"
+            prefWidth="600.0"
+            prefHeight="600.0"
+            fx:controller="com.example.diarioculturaljavafx.controller.CadastroFilmeController">
+
+    <VBox spacing="10" style="-fx-padding: 20;">
+        <Label text="Cadastro de Filme" style="-fx-font-size: 18;"/>
+
+        <TextField fx:id="campoNome" promptText="Nome do Filme"/>
+        <ComboBox fx:id="comboGenero" promptText="Gênero"/>
+        <TextField fx:id="campoAno" promptText="Ano de Lançamento"/>
+        <TextArea fx:id="campoDiretores" promptText="Diretores (separados por vírgula)" prefRowCount="2"/>
+        <TextArea fx:id="campoRoteiristas" promptText="Roteiristas (separados por vírgula)" prefRowCount="2"/>
+        <TextArea fx:id="campoAtores" promptText="Atores/Atrizes (separados por vírgula)" prefRowCount="2"/>
+        <TextField fx:id="campoOndeAssistir" promptText="Onde assistir"/>
+        <TextField fx:id="campoTituloOriginal" promptText="Título Original"/>
+        <TextField fx:id="campoDuracao" promptText="Duração (minutos)"/>
+
+        <CheckBox fx:id="checkVisto" text="Já assisti este filme"/>
+
+        <TextField fx:id="campoAvaliacao" promptText="Avaliação (1 a 5)"/>
+        <TextField fx:id="campoReview" promptText="Review"/>
+        <DatePicker fx:id="campoDataView" promptText="Data da visualização"/>
+
+        <Button text="Cadastrar" onAction="#handleCadastrar"/>
+        <Button text="Voltar" onAction="#voltar"/>
+    </VBox>
+</ScrollPane>

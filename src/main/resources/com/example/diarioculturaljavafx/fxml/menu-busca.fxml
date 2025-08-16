@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.diarioculturaljavafx.controller.MenuBuscaController"
+      alignment="CENTER"
+      spacing="20"
+      stylesheets="@../css/style.css"
+      styleClass="geral">
+
+
+<Button fx:id="btnLivro" text="Buscar Livro" prefWidth="200" styleClass="botao"/>
+    <Button fx:id="btnFilme" text="Buscar Filme" prefWidth="200" styleClass="botao"/>
+    <Button fx:id="btnSerie" text="Buscar Série" prefWidth="200" styleClass="botao"/>
+    <Button fx:id="btnSair" text="Sair" prefWidth="200" styleClass="botao"/>
+</VBox>

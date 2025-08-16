@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="700.0" prefWidth="700.0" spacing="10"
+      xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/23.0.1"
+      fx:controller="com.example.diarioculturaljavafx.controller.CadastroSerieController">
+
+    <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+
+    <Label text="Cadastro de Série" style="-fx-font-size: 18;"/>
+
+    <TextField fx:id="campoNome"           promptText="Nome da Série"/>
+    <ComboBox  fx:id="comboGenero"         promptText="Gênero"/>
+    <TextField fx:id="campoAno"            promptText="Ano de Lançamento"/>
+    <TextField fx:id="campoTituloOriginal" promptText="Título Original"/>
+    <TextField fx:id="campoOndeAssistir"   promptText="Onde assistir"/>
+    <TextField fx:id="campoAnoFinal"       promptText="Ano de Encerramento"/>
+    <TextArea  fx:id="campoAtores"         promptText="Atores/Atrizes (separados por vírgula)"/>
+    <TextField fx:id="campoReviewGeral"    promptText="Review Geral"/>
+
+    <!-- Temporadas - -->
+    <Label text="Temporadas" style="-fx-font-size: 16;"/>
+
+    <TableView fx:id="tabelaTemporadas" prefHeight="200">
+        <columns>
+            <TableColumn fx:id="colAno"       text="Ano"/>
+            <TableColumn fx:id="colEpisodios" text="Episódios"/>
+            <TableColumn fx:id="colAvaliacao" text="Avaliação"/>
+            <TableColumn fx:id="colReview"    text="Review"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="10">
+        <TextField fx:id="campoAnoTemp"        promptText="Ano"/>
+        <TextField fx:id="campoEpisodiosTemp"  promptText="Episódios"/>
+        <TextField fx:id="campoAvaliacaoTemp"  promptText="Avaliação (1‑5)"/>
+        <TextField fx:id="campoReviewTemp"     promptText="Review da temporada"/>
+        <Button    text="Adicionar" onAction="#handleAdicionarTemporada"/>
+    </HBox>
+
+    <Button text="Cadastrar" onAction="#handleCadastrar"/>
+    <Button text="Voltar" onAction="#voltar"/>
+</VBox>

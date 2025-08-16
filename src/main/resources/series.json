@@ -1,0 +1,44 @@
+[
+  {
+    "temps": [
+      {
+        "ano": 2005,
+        "quantidade": 21,
+        "avaliacao": 5,
+        "review": "ótima temporada inicial"
+      },
+      {
+        "ano": 2007,
+        "quantidade": 21,
+        "avaliacao": 4,
+        "review": "Muito boa!"
+      }
+    ],
+    "elenco": [
+      "Neil Patrick",
+      "Cobe"
+    ],
+    "fim": 2014,
+    "tituloOriginal": "How i met your mother",
+    "ondeAssistiu": "Disney +",
+    "nome": "Como eu conheci sua mãe",
+    "avaliacao": 4,
+    "genero": "Comédia",
+    "ano": 2005,
+    "review": "ótimo humor, ótimas lições"
+  },
+  {
+    "temps": [],
+    "elenco": [
+      "Sofia Vergara"
+    ],
+    "fim": 2020,
+    "tituloOriginal": "Modern Family",
+    "ondeAssistiu": "Disney +",
+    "nome": "Família Moderna",
+    "avaliacao": 0,
+    "genero": "Comédia",
+    "ano": 2008,
+    "review": "ótima série, ótimas histórias."
+  }
+]

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.diarioculturaljavafx.controller.ResultadoListagemController"
+      alignment="CENTER"
+      spacing="15"
+      stylesheets="@../css/style.css"
+      styleClass="geral">
+
+    <Label fx:id="labelTitulo" styleClass="titulo"/>
+    <TextArea fx:id="textAreaSaida" prefHeight="400" prefWidth="600" wrapText="true" editable="false"/>
+    <Button text="⬅ Voltar" onAction="#voltar" styleClass="botao"/>
+</VBox>

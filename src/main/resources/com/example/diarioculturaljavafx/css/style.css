@@ -1,0 +1,63 @@
+.tela-inicial {
+    -fx-background-image: url("fundo.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+
+}
+.geral {
+    -fx-background-color: #fff8f0;
+}
+.text-area {
+    -fx-font-family: "Roboto", "Open Sans", Arial, sans-serif;
+    -fx-font-size: 14pt;
+    -fx-text-fill: #333333;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 40px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 4);
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-wrap-text: true;
+    -fx-pref-width: 700px;
+    -fx-pref-height: 380px;
+}
+
+.botao, .navegacao {
+    -fx-background-color: #9f86c0;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4, 0, 0, 2);
+}
+
+.botao:hover, .navegacao:hover {
+    -fx-background-color: #be95c4;
+}
+
+
+.titulo {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #5e548e;
+}
+
+.botao {
+    -fx-background-color: #9f86c0;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+
+.botao:hover {
+    -fx-background-color: #be95c4;
+}

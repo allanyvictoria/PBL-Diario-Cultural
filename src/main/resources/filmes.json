@@ -1,0 +1,39 @@
+[
+  {
+    "duracao": 126,
+    "elenco": [
+      "Ansel Elgort"
+    ],
+    "ondeAssistir": "Disney +",
+    "titulo": "The fault in our stars",
+    "roteiro": [
+      "Scott N.",
+      "Michael Weber"
+    ],
+    "direcao": [
+      "Josh Boone"
+    ],
+    "dataAssistiu": "2017-11-01",
+    "nome": "A culpa é das estrelas",
+    "avaliacao": 5,
+    "genero": "Romance",
+    "ano": 2015,
+    "review": "Muito bom todo o desenvolvimento "
+  },
+  {
+    "duracao": 90,
+    "elenco": [
+      "heath ledger"
+    ],
+    "ondeAssistir": "disney +",
+    "titulo": "10 things i hate about you",
+    "roteiro": [],
+    "direcao": [],
+    "dataAssistiu": "2024-03-12",
+    "nome": "10 coisas que eu odeio em você",
+    "avaliacao": 5,
+    "genero": "Romance",
+    "ano": 1999,
+    "review": "Amei toda a história"
+  }
+]

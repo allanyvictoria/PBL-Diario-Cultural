@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.diarioculturaljavafx.controller.MenuListarSerieController"
+      alignment="CENTER"
+      spacing="15"
+      stylesheets="@../css/style.css"
+      styleClass="geral">
+
+    <Label text="📺 Séries - Escolha uma opção" styleClass="titulo"/>
+    <Button text="📈 Melhores avaliados" onAction="#melhores" styleClass="botao"/>
+    <Button text="📉 Piores avaliados" onAction="#piores" styleClass="botao"/>
+    <Button text="🔍 Filtrar por gênero" onAction="#filtroGenero" styleClass="botao"/>
+    <Button text="📅 Filtrar por ano" onAction="#filtroAno" styleClass="botao"/>
+    <Button text="📚 Todos" onAction="#todos" styleClass="botao"/>
+    <Button text="⬅ Voltar" onAction="#voltar" styleClass="botao"/>
+</VBox>
+

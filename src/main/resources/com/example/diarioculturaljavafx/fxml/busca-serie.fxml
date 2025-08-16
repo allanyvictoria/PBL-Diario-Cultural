@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:controller="com.example.diarioculturaljavafx.controller.BuscaSerieController"
+      alignment="CENTER"
+      spacing="15"
+      stylesheets="@../css/style.css"
+      styleClass="geral" xmlns:fx="http://javafx.com/fxml">
+
+    <padding>
+        <Insets top="20" right="30" bottom="20" left="30"/>
+    </padding>
+
+    <Label text="🔍 Buscar Série por:" styleClass="titulo"/>
+
+    <Button text="Título" onAction="#buscarTitulo" styleClass="botao"/>
+    <Button text="Gênero" onAction="#buscarGenero" styleClass="botao"/>
+    <Button text="Ano de Lançamento" onAction="#buscarAno" styleClass="botao"/>
+    <Button text="Elenco" onAction="#buscarAtor" styleClass="botao"/>
+    <Button text="⬅ Voltar" onAction="#voltar" styleClass="botao"/>
+
+</VBox>

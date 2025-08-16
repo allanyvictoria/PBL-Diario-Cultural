@@ -1,0 +1,37 @@
+[
+  {
+    "autor": "Raphael Montes",
+    "editora": "Companhia das Letras",
+    "isbn": "1234567890",
+    "possui": true,
+    "leitura": "2024-07-17",
+    "nome": "Jantar Secreto",
+    "avaliacao": 5,
+    "genero": "Suspense",
+    "ano": 2016,
+    "review": "Sensacional"
+  },
+  {
+    "autor": "Elayne Baeta",
+    "editora": "Galera",
+    "isbn": "1012131415-123",
+    "possui": true,
+    "leitura": "2022-06-23",
+    "nome": "O amor não é óbvio",
+    "avaliacao": 5,
+    "genero": "Romance",
+    "ano": 2019,
+    "review": "ótima leitura, boa história!"
+  },
+  {
+    "autor": "eu",
+    "editora": "nois",
+    "isbn": "1234567891",
+    "possui": false,
+    "nome": "21/01//",
+    "avaliacao": -1,
+    "genero": "Ação",
+    "ano": 2021,
+    "review": "Não lido"
+  }
+]

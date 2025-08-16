@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefWidth="900" prefHeight="600" minWidth="900" minHeight="600"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.diarioculturaljavafx.controller.ListagemController"
+      alignment="CENTER"
+      spacing="20"
+      stylesheets="@../css/style.css"
+      styleClass="geral">
+
+    <Label text="Acervo encontrado" styleClass="titulo"/>
+
+    <TextArea fx:id="textAreaSaida"
+              styleClass="text-area"
+              wrapText="true"
+              editable="false"/>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button text="◀ Anterior" onAction="#anterior" styleClass="navegacao"/>
+        <Button text="Próximo ▶" onAction="#proximo" styleClass="navegacao"/>
+    </HBox>
+
+    <Button text="Tela inicial" onAction="#retornar" styleClass="botao"/>
+</VBox>
+
+
